@@ -1,0 +1,248 @@
+#weather-plugin{
+  font-family: Ubuntu;
+  color: #009ACD;
+  margin: 5%;
+}
+#weather-plugin h2 {
+  font-size: 30px !important;
+}
+#weather-plugin h3, h4 {
+  font-size: 24px !important;
+}
+#weather-plugin i {
+  font-size: 100px !important;
+}
+#weather-plugin #cond {
+  font-size: 200px !important;
+}
+#weather-plugin #tempC {
+  font-size: 80px !important;
+}
+#weather-plugin .lastrow {
+  font-size: 40px !important;
+}
+#weather-plugin #loc {
+  font-size: 80px !important;
+}
+#weather-plugin #togg {
+  cursor: pointer !important;
+  font-size: 20px !important;
+}
+#weather-plugin #fahD {
+  display: none !important;
+}
+
+.wrapper {
+  margin: 30px auto;
+  font-family: sans-serif;
+  color: #555;
+  font-size: 14px;
+  line-height: 24px;
+}
+.tabs li {
+  float: left;
+  width: 20%;
+}
+.tabs a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #888;
+  padding: 20px 0;
+  border-bottom: 2px solid #888;
+  background: #f7f7f7;
+}
+.tabs a:hover,
+.tabs a.active {
+  background: #ddd;
+}
+.tabgroup > div {
+  padding: 30px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#tab2 {
+  color: #fff;
+  font-family: Ubuntu;
+  font-size: 16px;
+  min-height: 700px;
+}
+#tab2 h2 {
+    color: #000;
+}
+#tab2 div {
+  box-shadow: inset 0 0 0 3px transparent;
+  float: left;
+  display: block;
+  width: 190px;
+  height: 100px;
+  position: relative;
+  -webkit-transition: box-shadow 0.5s ease;
+  transition: box-shadow 0.5s ease;
+}
+#tab2 div:hover,
+#tab2 div:active {
+  box-shadow: inset 0 0 0 3px #666;
+  cursor: pointer;
+}
+#tab2 div > p {
+  bottom: 5px;
+  left: 5px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  text-transform: uppercase;
+}
+#tab2 div > span {
+  bottom: 25px;
+  left: 5px;
+  position: absolute;
+}
+
+.turquoise {
+  background: #1abc9c;
+}
+.emerland {
+  background: #2ecc71;
+}
+.peterriver {
+  background: #3498db;
+}
+.amethyst {
+  background: #9b59b6;
+}
+.wetasphalt {
+  background: #34495e;
+}
+.greensea {
+  background: #16a085;
+}
+.nephritis {
+  background: #27ae60;
+}
+.belizehole {
+  background: #2980b9;
+}
+.wisteria {
+  background: #8e44ad;
+}
+.midnightblue {
+  background: #2c3e50;
+}
+.sunflower {
+  background: #f1c40f;
+}
+.carrot {
+  background: #e67e22;
+}
+.alizarin {
+  background: #e74c3c;
+}
+.clouds {
+  background: #ecf0f1;
+  color: #777;
+}
+.concrete {
+  background: #95a5a6;
+}
+.orange {
+  background: #f39c12;
+}
+.pumpkin {
+  background: #d35400;
+}
+.pomegranate {
+  background: #c0392b;
+}
+.silver {
+  background: #bdc3c7;
+}
+.asbestos {
+  background: #7f8c8d;
+}
+.LGBT {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Gay_flag.svg/190px-Gay_flag.svg.png);
+    width: 760px !important;
+}
+
+#jiriImage {
+    width: 150px;
+    height: 150px;
+}
+
+#bigClownImage{  
+    position: absolute;
+    top: 40%;
+    right: 0;
+    bottom: 0;
+    left: 15%;
+    width: 167px;
+    height: 242px;
+    background-image: url(https://www.bigclown.com/svg/sprite.svg);
+    background-size: 100em 204.6em;
+}
+
+.button {
+    font-size: 100% !important;
+    height: 3em !important;
+    line-height: 3em !important;
+    margin-right: .5em !important;
+    margin: 8px 8px 0 8px;
+    float: right;
+}
+
+#tab3 table tr td input, select {
+    margin: 6px 2px;
+}
+
+#main {
+  background-color: #CD7300;
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+  z-index: 50;
+  transition: background-color 1s ease;
+}
+#main,
+.container {
+  position: absolute;
+  top: 60%;
+  right: 0;
+  bottom: 0;
+  left: 70%;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+polyline {
+    fill: none;
+    stroke-width: 5;
+    stroke-linecap: square;
+    stroke: rgba(240,192,108,1);
+    z-index: 5;
+}
+.shade {
+    fill: rgba(0,0,0,0.2);
+    stroke-width: 0;
+    stroke-linecap: butt;
+    stroke: rgba(0,0,0,0.2);
+}
+.content {
+    position:absolute;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 19px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 500px auto;
+    width: 80%;
+    visibility:hidden;
+    opacity: 0.0;
+    border-top: 10px solid #CD7300;
+    border-bottom: 10px solid #CD7300;
+}
